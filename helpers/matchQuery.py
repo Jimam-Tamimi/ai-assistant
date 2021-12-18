@@ -1,7 +1,7 @@
 from difflib import SequenceMatcher
 
 
-def matchQuery(query:str, queryList:list, exact:bool=False):
+def matchQuery(query:str, queryList:list, exact:bool=False, match=0.8):
     if(exact):
         if(query in queryList):
             return True
